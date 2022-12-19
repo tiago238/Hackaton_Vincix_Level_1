@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="800,2462" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1474,2352" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="76">
+    <scg:List x:TypeArguments="x:String" Capacity="42">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -42,6 +42,7 @@
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -100,7 +101,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="768,2397" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="676,2287" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_DadosFuncionarios" />
     </Sequence.Variables>
@@ -109,19 +110,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Abre Página " sap:VirtualizedContainerService.HintSize="726,1614" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Abre Página " sap:VirtualizedContainerService.HintSize="634,1504" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Hackatlon - Level01 - Inicialização" sap:VirtualizedContainerService.HintSize="664,1492" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="12160ee3-9c9a-4aa9-895a-7b1694005e16" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Hackatlon - Level01 - Inicialização" sap:VirtualizedContainerService.HintSize="572,1382" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="12160ee3-9c9a-4aa9-895a-7b1694005e16" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="630,1266" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="538,1156" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="col_NomesFerramentas" />
               </Sequence.Variables>
@@ -130,96 +131,134 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="588,61" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:FindChildren Children="[col_NomesFerramentas]" DisplayName="Find Children Nomes das Ferramentas" Filter="&lt;webctrl tag='li' aaname='Uipath'/&gt;" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
-                      <ui:FindChildren.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e1e16b5c-403d-4e46-8957-28127dd404cf" InformativeScreenshot="17d4244c9043ad1d2bb163549a0081b1" Selector="&lt;webctrl aria-role='listbox' tag='UL' class='select2-results__options' /&gt;">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
-                        </ui:Target>
-                      </ui:FindChildren.Target>
-                    </ui:FindChildren>
-                  </Sequence>
-                </ui:CommentOut.Body>
+              <Sequence DisplayName="SELECT RPA TOOL" sap:VirtualizedContainerService.HintSize="496,90" sap2010:WorkflowViewState.IdRef="Sequence_11">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-              </ui:CommentOut>
-              <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentElement' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="588,936" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="12160ee3-9c9a-4aa9-895a-7b1694005e16" Version="V3">
-                <uix:NForEachUiElement.Body>
-                  <ActivityAction x:TypeArguments="x:Int32">
-                    <ActivityAction.Argument>
-                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
-                    </ActivityAction.Argument>
-                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="524,662" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[CurrentElement.Get(&quot;aaname&quot;).ToString.Equals(&quot;UiPath&quot;)]" sap:VirtualizedContainerService.HintSize="482,571" sap2010:WorkflowViewState.IdRef="If_1">
-                        <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="400,308" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="358,146" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                            <ui:Break sap:VirtualizedContainerService.HintSize="358,32" sap2010:WorkflowViewState.IdRef="Break_1" />
-                          </Sequence>
-                        </If.Then>
-                        <If.Else>
-                          <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Sequence>
-                        </If.Else>
-                      </If>
-                    </Sequence>
-                  </ActivityAction>
-                </uix:NForEachUiElement.Body>
-                <uix:NForEachUiElement.Target>
-                  <uix:TargetAnchorable DesignTimeRectangle="165, 493, 334, 240" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL select2-rpaSSelect-r…'" FullSelectorArgument="&lt;webctrl tag='UL' /&gt;" Guid="823e12d6-adcc-4e2e-b516-7070e23453ad" InformativeScreenshot="dad18c4eab36bf8bc094f92195f52447.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hackatlon - Level01 - Init' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
-                </uix:NForEachUiElement.Target>
-                <uix:NForEachUiElement.Variables>
-                  <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
-                  <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
-                </uix:NForEachUiElement.Variables>
-                <uix:NForEachUiElement.VariablesMetadata>
-                  <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
-                    <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
-                    <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
-                  </scg:List>
-                </uix:NForEachUiElement.VariablesMetadata>
-              </uix:NForEachUiElement>
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="588,97" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
+                <uix:NClick ClickType="Single" DisplayName="Click Select RPA Tool" sap:VirtualizedContainerService.HintSize="588,61" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="12160ee3-9c9a-4aa9-895a-7b1694005e16" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1" DesignTimeRectangle="324, 418, 734, 36" DesignTimeScaleFactor="1" FriendlyName="'Select a RPA Tool'" FullSelectorArgument="&lt;webctrl aria-role='textbox' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='textbox' tag='SPAN' type='' class='select2-selection__rendered' aaname='' check:innerText='Select a RPA Tool' /&gt;" Guid="15dc30ec-6925-4078-b941-50f00dde3f54" ImageBase64="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" InformativeScreenshot="1cae365bab29958b4c197ef79becf71c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hackatlon - Level01*' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentElement' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="588,937" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="12160ee3-9c9a-4aa9-895a-7b1694005e16" Version="V3">
+                  <uix:NForEachUiElement.Body>
+                    <ActivityAction x:TypeArguments="x:Int32">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="524,663" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[CurrentElement.Get(&quot;aaname&quot;).ToString.Equals(&quot;UiPath&quot;)]" sap:VirtualizedContainerService.HintSize="482,571" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,308" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="358,146" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                              <ui:Break sap:VirtualizedContainerService.HintSize="358,32" sap2010:WorkflowViewState.IdRef="Break_1" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NForEachUiElement.Body>
+                  <uix:NForEachUiElement.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="165, 493, 334, 240" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL select2-rpaSSelect-r…'" FullSelectorArgument="&lt;webctrl tag='UL' /&gt;" Guid="823e12d6-adcc-4e2e-b516-7070e23453ad" InformativeScreenshot="dad18c4eab36bf8bc094f92195f52447.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hackatlon - Level01*' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                  </uix:NForEachUiElement.Target>
+                  <uix:NForEachUiElement.Variables>
+                    <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                    <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                  </uix:NForEachUiElement.Variables>
+                  <uix:NForEachUiElement.VariablesMetadata>
+                    <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                      <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                      <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                    </scg:List>
+                  </uix:NForEachUiElement.VariablesMetadata>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NForEachUiElement>
+              </Sequence>
+              <Sequence DisplayName="DOWNLOAD CSV" sap:VirtualizedContainerService.HintSize="496,782" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="si:FileInfo" Name="fi_NameFileCSV" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetLastDownloadedFile IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="C:\Users\tiago\Downloads" File="[fi_NameFileCSV]" sap:VirtualizedContainerService.HintSize="434,521" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                  <ui:GetLastDownloadedFile.Body>
+                    <ActivityAction>
+                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="400,256" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ClickType="Single" DisplayName="Click Button DOWNLOAD CSV" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="12160ee3-9c9a-4aa9-895a-7b1694005e16" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1" DesignTimeRectangle="323, 471, 356, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Download CSV'" FullSelectorArgument="&lt;webctrl tag='A' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='button' class='btn btn-success btn-block btn-lg' aaname='Download CSV' check:innerText='Download CSV' /&gt;" Guid="75d53287-fd9c-4717-8481-533399f4dc0b" ImageBase64="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" InformativeScreenshot="bddd621c983bbc564f961a9778fecdc9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hackatlon - Level01*' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:GetLastDownloadedFile.Body>
+                </ui:GetLastDownloadedFile>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,97" sap2010:WorkflowViewState.IdRef="WriteLine_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </WriteLine>
+              </Sequence>
+              <Sequence DisplayName="CLICK START BUTTON" sap:VirtualizedContainerService.HintSize="496,113" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e0780a42fe64f83d915b76b8e4e1df12.jpg" Selector="&lt;html app='chrome.exe' title='Hackatlon - Level01 - Inicialização' /&gt;" Url="https://www.rpahackathon.co.uk/l1" />
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e0780a42fe64f83d915b76b8e4e1df12.jpg" Selector="&lt;html app='chrome.exe' title='Hackatlon - Level01*' /&gt;" Url="https://www.rpahackathon.co.uk/l1" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
     </Sequence>
-    <Sequence DisplayName="Leitura de Planilha" sap:VirtualizedContainerService.HintSize="726,285" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Leitura de Planilha" sap:VirtualizedContainerService.HintSize="634,285" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -227,7 +266,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:ReadCsvFile DataTable="[dt_DadosFuncionarios]" Delimitator="Semicolon" DisplayName="Read CSV" FilePath="rpa_hackathon.csv" sap:VirtualizedContainerService.HintSize="434,163" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" IgnoreQuotes="True" />
     </Sequence>
-    <Sequence DisplayName="Processo" sap:VirtualizedContainerService.HintSize="726,328" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="Processo" sap:VirtualizedContainerService.HintSize="634,328" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

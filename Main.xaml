@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1474,7292" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1546,8530" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="47">
       <x:String>System.Activities</x:String>
@@ -118,7 +118,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1374,7227" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1556,8465" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_DadosFuncionarios" />
       <Variable x:TypeArguments="si:FileInfo" Name="fi_NameFileCSV" />
@@ -129,19 +129,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="OPEN PAGE AND START PROCESS" sap:VirtualizedContainerService.HintSize="1332,163" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="OPEN PAGE AND START PROCESS" sap:VirtualizedContainerService.HintSize="1514,934" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Hackatlon - Level01*" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="12160ee3-9c9a-4aa9-895a-7b1694005e16" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Hackatlon - Level01*" sap:VirtualizedContainerService.HintSize="476,823" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="12160ee3-9c9a-4aa9-895a-7b1694005e16" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="692,606" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="442,606" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="col_NomesFerramentas" />
               </Sequence.Variables>
@@ -150,7 +150,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="SELECT RPA TOOL" sap:VirtualizedContainerService.HintSize="496,81" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence DisplayName="SELECT RPA TOOL" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_11">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -226,7 +226,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NForEachUiElement>
               </Sequence>
-              <Sequence DisplayName="DOWNLOAD CSV" sap:VirtualizedContainerService.HintSize="496,81" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="DOWNLOAD CSV" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -252,7 +252,7 @@
                   </ui:GetLastDownloadedFile.Body>
                 </ui:GetLastDownloadedFile>
               </Sequence>
-              <Sequence DisplayName="CLICK START BUTTON" sap:VirtualizedContainerService.HintSize="496,272" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="CLICK START BUTTON" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -273,13 +273,13 @@
         </uix:NApplicationCard.TargetApp>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
     </Sequence>
-    <Assign sap:VirtualizedContainerService.HintSize="1332,82" sap2010:WorkflowViewState.IdRef="Assign_13">
+    <Assign sap:VirtualizedContainerService.HintSize="1514,82" sap2010:WorkflowViewState.IdRef="Assign_13">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_PathCSVFile]</OutArgument>
       </Assign.To>
@@ -287,7 +287,7 @@
         <InArgument x:TypeArguments="x:String">C:\Users\tiago\Downloads\rpa_hackathon.csv</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="Leitura de Planilha" sap:VirtualizedContainerService.HintSize="1332,1090" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Leitura de Planilha" sap:VirtualizedContainerService.HintSize="1514,1090" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:List(x:String)" Name="lst_ReadCSV" />
         <Variable x:TypeArguments="x:String" Name="str_RadCSV" />
@@ -320,20 +320,20 @@
       <ui:GenerateDataTable ColumnSizes="{x:Null}" NewLineSeparator="{x:Null}" Positions="{x:Null}" CSVParsing="True" ColumnSeparators=";" DataTable="[dt_DadosFuncionarios]" DisplayName="Gerar Tabela de Dados" sap:VirtualizedContainerService.HintSize="434,201" sap2010:WorkflowViewState.IdRef="GenerateDataTable_2" Input="[str_RadCSVMounted]" />
       <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" />
     </Sequence>
-    <Sequence DisplayName="Processo" sap:VirtualizedContainerService.HintSize="1332,5684" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="Processo" sap:VirtualizedContainerService.HintSize="1514,6151" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_DadosFuncionarios]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1270,5453" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_DadosFuncionarios]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1452,5920" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="dadoFuncionario" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="1236,5336" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="1418,5803" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="str_FirstName" />
                 <Variable x:TypeArguments="x:String" Name="str_LastName" />
@@ -350,7 +350,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1194,318" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1376,318" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -426,19 +426,19 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:MultipleAssign>
-              <Sequence sap:VirtualizedContainerService.HintSize="1194,4760" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <Sequence sap:VirtualizedContainerService.HintSize="1376,5227" sap2010:WorkflowViewState.IdRef="Sequence_16">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Vincix Hackathon" sap:VirtualizedContainerService.HintSize="1132,4649" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Vincix Hackathon" sap:VirtualizedContainerService.HintSize="1314,5116" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1098,4432" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1280,4899" sap2010:WorkflowViewState.IdRef="Sequence_17">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Boolean" Name="bol_Exists" />
                         </Sequence.Variables>
@@ -447,9 +447,9 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NCheckState DisplayName="Check App State EXISTS POPUP CLICK BUTTON LABEL" sap:VirtualizedContainerService.HintSize="1056,2341" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Timeout="1" Version="V3">
+                        <uix:NCheckState DisplayName="Check App State EXISTS POPUP CLICK BUTTON LABEL" sap:VirtualizedContainerService.HintSize="1238,2804" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Timeout="0.2" Version="V3">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="602,2124" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                            <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="784,2587" sap2010:WorkflowViewState.IdRef="Sequence_18">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="str_MessagePopup" />
                                 <Variable x:TypeArguments="s:String[]" Name="arr_MessagePopup" />
@@ -460,7 +460,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NGetText DisplayName="Get Text 'Click the'" sap:VirtualizedContainerService.HintSize="540,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" TextString="[str_MessagePopup]" Version="V3">
+                              <uix:NGetText DisplayName="Get Text 'Click the'" sap:VirtualizedContainerService.HintSize="722,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" TextString="[str_MessagePopup]" Version="V3">
                                 <uix:NGetText.Target>
                                   <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="300, 219, 766, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Click the'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' /&gt;" Guid="0e3960fc-5674-49bc-b070-25b84b0f5e54" InformativeScreenshot="332023d3fd728a07a1dfafe45e5fc5a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                                 </uix:NGetText.Target>
@@ -471,7 +471,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NGetText>
-                              <Assign sap:VirtualizedContainerService.HintSize="540,82" sap2010:WorkflowViewState.IdRef="Assign_9">
+                              <Assign sap:VirtualizedContainerService.HintSize="722,82" sap2010:WorkflowViewState.IdRef="Assign_9">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="s:String[]">[arr_MessagePopup]</OutArgument>
                                 </Assign.To>
@@ -479,7 +479,7 @@
                                   <InArgument x:TypeArguments="s:String[]">[str_MessagePopup.Split(" ").ToArray]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <Assign sap:VirtualizedContainerService.HintSize="540,82" sap2010:WorkflowViewState.IdRef="Assign_10">
+                              <Assign sap:VirtualizedContainerService.HintSize="722,82" sap2010:WorkflowViewState.IdRef="Assign_10">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[str_TextButton]</OutArgument>
                                 </Assign.To>
@@ -487,20 +487,20 @@
                                   <InArgument x:TypeArguments="x:String">[arr_MessagePopup(arr_MessagePopup.Count - 1)]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <Sequence DisplayName="CHECK NUMBER OF BUTTON" sap:VirtualizedContainerService.HintSize="540,751" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                              <Sequence DisplayName="CHECK NUMBER OF BUTTON" sap:VirtualizedContainerService.HintSize="722,1210" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentElement' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='button' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="464,636" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V3">
+                                <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentElement' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='button' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="660,1095" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V3">
                                   <uix:NForEachUiElement.Body>
                                     <ActivityAction x:TypeArguments="x:Int32">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="400,371" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="596,830" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Name="teste2" />
                                         </Sequence.Variables>
@@ -509,15 +509,15 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <uix:NGetAttribute Attribute="aaname" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="358,187" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" InUiElement="[CurrentElement]" Version="V3">
+                                        <uix:NGetAttribute Attribute="aaname" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="554,187" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" InUiElement="[CurrentElement]" Version="V3">
                                           <uix:NGetAttribute.Result>
                                             <OutArgument x:TypeArguments="x:String">[teste2]</OutArgument>
                                           </uix:NGetAttribute.Result>
                                         </uix:NGetAttribute>
-                                        <If Condition="[str_TextButton.Equals(teste2)]" sap:VirtualizedContainerService.HintSize="358,52" sap2010:WorkflowViewState.IdRef="If_2">
+                                        <If Condition="[str_TextButton.Equals(teste2)]" sap:VirtualizedContainerService.HintSize="554,511" sap2010:WorkflowViewState.IdRef="If_2">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -567,7 +567,7 @@
                                   </uix:NForEachUiElement.VariablesMetadata>
                                 </uix:NForEachUiElement>
                               </Sequence>
-                              <Sequence DisplayName="CHECK IF BUTTON IS CORRECT" sap:VirtualizedContainerService.HintSize="540,777" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                              <Sequence DisplayName="CHECK IF BUTTON IS CORRECT" sap:VirtualizedContainerService.HintSize="722,781" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -581,7 +581,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NClick ClickType="Single" DisplayName="Click C" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V3">
+                                      <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click C" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V3">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="843, 292, 187, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'C'" FullSelectorArgument="&lt;webctrl aaname='C' tag='BUTTON' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='BUTTON' type='button' class='btn btn-secondary' check:innerText='{0}' /&gt;&quot;, str_TextButton)]" Guid="5a76172c-96f8-4b86-b473-6a3fa1e2cb5a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL8AAAAqCAYAAADiQYr2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVHhe7d3PKwRxGMdx/y/lpFzE0UnZ8uOE0qbsxUFyUU6bklI4ODho08RBkexh0+P7xGda+spl+y7zvD/1uuzsXqb3bJotM2GMBR3xs7D7Ev9t785a6xs2PbtgUzNzQCN4z9619z28On4/oOgnv30Y+M/Us/c9fAHU8fuV8f1DQNN451odv18VfOOjybxv71yr48+9GWgijfgRjkb8CEcjfoSjET/C0Ygf4WjEj3A04kc4GvEjHI34EY5G/MWt2u7JjVUvg88zn/bWt6felR22lzLvx6hpxF/UtnWrFH2Kvbo4tt2dbWut79jWwYldVv30+oN1V3KfwyhpxF9Q6/Qhnem+Xe/nv+HX2h2bz7yO0dKIv5iOXT6nE31/RuBjphF/MWdWpfP8dNXJHENJGvEX8xF/dZo7hpI04i+Gb/6/QiP+Yjbt/DGdaP7mHzuN+Av67W7P4vJq9nWMlkb8RX3e508XwMd9/o5tub1jO+c+fzEa8ReX+4V3YK/313bEL7xFaMSPcDTiRzga8SMcjfgRjkb8CEcjfoSjET/C0Ygf4WjEj3C0On7+RTma7sd/Uc7DKRBB9uEUPJYITaWeve/sY4l8fsCvDF0EQBN4z971cPi+L/EzFmnEz4LO7B3knC87svSIqAAAAABJRU5ErkJggg==" InformativeScreenshot="5eac8391f0ec2cfed9bf89fb5faace25.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                                         </uix:NClick.Target>
@@ -595,7 +595,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NClick ClickType="Single" DisplayName="Click X" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V3">
+                                      <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click X" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V3">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="1035, 140, 46, 56" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'×'" FullSelectorArgument="&lt;webctrl tag='BUTTON' class='close' parentid='modal_hackathon' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' class='close' parentid='modal_hackathon' type='button' check:text='×' /&gt;" Guid="c468d049-e968-473a-a48f-a1a84c29b543" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAA8CAYAAAAkNenBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF9SURBVGhD7dS9aoNQFMDxPENa+hClhQ59jDyDKXTo0rmzk0QEMzg6Orhly5itTyCdHIKDOEiyqAi1kNOeciW2Jl1yTzmG84c73GuWX+7H6OX+Cs5hjIzrMQxtTL/G480Ynu8u9xAYYB/NO7y9rmA2ncDT7cVwId1mxuR7ZwYPwZ3BYzZ4CB4zvDODh2D4AAiEUwLhlkC4JRBuCYRbAuGWQLglEG4JhFsC+aumaSDPczXrV9c1bLdbNdOTdggilsslzOdziONYre6rqgrCMATf9yHLMrV6etoh+E8HQQCmafYwLQK/WZYFURSpL6dHcrQ2m00PU5YlGQIju+xdjG3b4LouGQIjg2BdDCUCI4V07wSO9pjtdjv1C32RQX5fbMdxfmB0RwI59DodegB0ph1SFMXR14kSox2Cu7FYLI5e7BbjeR4kSaJWT4/saK3XazXrh5g0TdVMT2SX/b8TCLcEwi2BcEsg3BIItwTCLYFwSyDcEgi3BMKt84EYD/AJkM7ssmz+PZEAAAAASUVORK5CYII=" InformativeScreenshot="f14092dd41a644159b34a7a85822b855.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                                             <uix:TargetAnchorable.Anchors>
@@ -632,42 +632,42 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field FIRST NAME" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1056,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_FirstName]" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field FIRST NAME" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1238,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_FirstName]" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="505, 319, 356, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT first_name'" FullSelectorArgument="&lt;webctrl id='first_name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='first_name' tag='INPUT' type='text' class='form-control' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;First Name&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="e1f92093-3575-47d8-9f7e-971b946f8b78" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAqCAYAAAAjxsBaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVHhe7dy9SkNRFIRR3//htBEEsRHBPwJ5gAhHpjDckKQ1e2AtmCqn/Ai32ndfu/0ymz6hWsVOQn37+F5PL6/r4fF53ZvdYGkvDabFbZvHUPNDHr1/7tbh8LPgFtJeGkyL21iPoabiPIAJ0mKaPAs1BfsnZYq0mCbPQs33AUySJoXKeEKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKF0N1dpJJrp6ddMiXSa4e8nUanQnSXhpMixdPo//FmorzKN8HZv+9tJcGt5FmJ6GaTZ1QrWD79QuTrKE4epY5HgAAAABJRU5ErkJggg==" InformativeScreenshot="7262aedb0f1e0421d4d5558641614aca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field LAST NAME" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1056,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_LastName]" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field LAST NAME" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1238,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_LastName]" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="505, 373, 356, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT last_name'" FullSelectorArgument="&lt;webctrl id='last_name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='last_name' tag='INPUT' type='text' class='form-control' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Last Name&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="63c5c84c-714c-4b33-8de8-3fcb596d7e8f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAqCAYAAAAjxsBaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVHhe7dy9SkNRFIRR3//htBEEsRHBPwJ5gAhHpjDckKQ1e2AtmCqn/Ai32ndfu/0ymz6hWsVOQn37+F5PL6/r4fF53ZvdYGkvDabFbZvHUPNDHr1/7tbh8LPgFtJeGkyL21iPoabiPIAJ0mKaPAs1BfsnZYq0mCbPQs33AUySJoXKeEKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKF0N1dpJJrp6ddMiXSa4e8nUanQnSXhpMixdPo//FmorzKN8HZv+9tJcGt5FmJ6GaTZ1QrWD79QuTrKE4epY5HgAAAABJRU5ErkJggg==" InformativeScreenshot="a6e0204df2fb1daf0864139b392a5d10.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field COMPANY NAME" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1056,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_CompanyName]" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field COMPANY NAME" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1238,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="Simulate" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_CompanyName]" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="505, 427, 356, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT company_name'" FullSelectorArgument="&lt;webctrl id='company_name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='company_name' tag='INPUT' type='text' class='form-control' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Company Name&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="0054511e-1a17-4b15-ad3a-a02aea6a6728" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAqCAYAAAAjxsBaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVHhe7dy9SkNRFIRR3//htBEEsRHBPwJ5gAhHpjDckKQ1e2AtmCqn/Ai32ndfu/0ymz6hWsVOQn37+F5PL6/r4fF53ZvdYGkvDabFbZvHUPNDHr1/7tbh8LPgFtJeGkyL21iPoabiPIAJ0mKaPAs1BfsnZYq0mCbPQs33AUySJoXKeEKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKF0N1dpJJrp6ddMiXSa4e8nUanQnSXhpMixdPo//FmorzKN8HZv+9tJcGt5FmJ6GaTZ1QrWD79QuTrKE4epY5HgAAAABJRU5ErkJggg==" InformativeScreenshot="6c32f49cdd636a1e31582d0a91b8524f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field Role In Company" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1056,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_RoleInCompany]" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field Role In Company" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1238,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="Simulate" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_RoleInCompany]" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="505, 481, 356, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT role_in_company'" FullSelectorArgument="&lt;webctrl id='role_in_company' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='role_in_company' tag='INPUT' type='text' class='form-control' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Role In Company&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="35894947-08fe-4219-8d12-9d61d0691602" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAqCAYAAAAjxsBaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVHhe7dy9SkNRFIRR3//htBEEsRHBPwJ5gAhHpjDckKQ1e2AtmCqn/Ai32ndfu/0ymz6hWsVOQn37+F5PL6/r4fF53ZvdYGkvDabFbZvHUPNDHr1/7tbh8LPgFtJeGkyL21iPoabiPIAJ0mKaPAs1BfsnZYq0mCbPQs33AUySJoXKeEKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKF0N1dpJJrp6ddMiXSa4e8nUanQnSXhpMixdPo//FmorzKN8HZv+9tJcGt5FmJ6GaTZ1QrWD79QuTrKE4epY5HgAAAABJRU5ErkJggg==" InformativeScreenshot="a29de8b466d97be9464865eb33b5bb7d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field ADDRESS" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1056,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_Address]" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field ADDRESS" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1238,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="Simulate" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_Address]" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="505, 535, 356, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT address'" FullSelectorArgument="&lt;webctrl id='address' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='address' tag='INPUT' type='text' class='form-control' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Address&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="f8ee0b50-12ae-4e70-878d-62535dece87d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAqCAYAAAAjxsBaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVHhe7dy9SkNRFIRR3//htBEEsRHBPwJ5gAhHpjDckKQ1e2AtmCqn/Ai32ndfu/0ymz6hWsVOQn37+F5PL6/r4fF53ZvdYGkvDabFbZvHUPNDHr1/7tbh8LPgFtJeGkyL21iPoabiPIAJ0mKaPAs1BfsnZYq0mCbPQs33AUySJoXKeEKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKF0N1dpJJrp6ddMiXSa4e8nUanQnSXhpMixdPo//FmorzKN8HZv+9tJcGt5FmJ6GaTZ1QrWD79QuTrKE4epY5HgAAAABJRU5ErkJggg==" InformativeScreenshot="03272ec193956ebbbe1cbb3bebdc01de.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field E-MAIL" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1056,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_Email]" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field E-MAIL" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1238,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="Simulate" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_Email]" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="505, 589, 356, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='text' class='form-control' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;E-Mail&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="cf366406-5e5d-4072-b9a8-050e9e706516" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAqCAYAAAAjxsBaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVHhe7dy9SkNRFIRR3//htBEEsRHBPwJ5gAhHpjDckKQ1e2AtmCqn/Ai32ndfu/0ymz6hWsVOQn37+F5PL6/r4fF53ZvdYGkvDabFbZvHUPNDHr1/7tbh8LPgFtJeGkyL21iPoabiPIAJ0mKaPAs1BfsnZYq0mCbPQs33AUySJoXKeEKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKF0N1dpJJrp6ddMiXSa4e8nUanQnSXhpMixdPo//FmorzKN8HZv+9tJcGt5FmJ6GaTZ1QrWD79QuTrKE4epY5HgAAAABJRU5ErkJggg==" InformativeScreenshot="6618760041a250c7ec956256deb0e6d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field PHONE NUMBER" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1056,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_PhoneNumber]" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Field PHONE NUMBER" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1238,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="Simulate" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Text="[str_PhoneNumber]" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="505, 643, 356, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT phone_number'" FullSelectorArgument="&lt;webctrl id='phone_number' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='phone_number' tag='INPUT' type='text' class='form-control' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Phone Number&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="5b3a4b12-a033-4609-8a0a-0ebb01355741" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAqCAYAAAAjxsBaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVHhe7dy9SkNRFIRR3//htBEEsRHBPwJ5gAhHpjDckKQ1e2AtmCqn/Ai32ndfu/0ymz6hWsVOQn37+F5PL6/r4fF53ZvdYGkvDabFbZvHUPNDHr1/7tbh8LPgFtJeGkyL21iPoabiPIAJ0mKaPAs1BfsnZYq0mCbPQs33AUySJoXKeEKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKQqWCUKkgVCoIlQpCpYJQqSBUKgiVCkKlglCpIFQqCJUKF0N1dpJJrp6ddMiXSa4e8nUanQnSXhpMixdPo//FmorzKN8HZv+9tJcGt5FmJ6GaTZ1QrWD79QuTrKE4epY5HgAAAABJRU5ErkJggg==" InformativeScreenshot="fdb02a602ffb95adecaddbc0da97d25f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
-                        <uix:NClick ClickType="Single" DisplayName="Click Button SUBMIT" sap:VirtualizedContainerService.HintSize="1056,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V3">
+                        <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click Button SUBMIT" sap:VirtualizedContainerService.HintSize="1238,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ccfa1df-14da-44b0-8b42-53900cc63ad5" Version="V3">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.rpahackathon.co.uk/l1/challenge" DesignTimeRectangle="505, 477, 356, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='btn btn-success btn-block btn-lg' aaname='Submit' check:innerText='Submit' /&gt;" Guid="bf2f349c-bf3e-4476-b46e-8a914110b27f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWgAAAA0CAYAAACn3qLtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATOSURBVHhe7dzBTxNZAMfx/XOIZ/8BE/Ssd0m4SOJhb3iqF7lsOJhswoFw0VPlAAdJD0SSaoBDl020WbOwMW1gCxuaplahhdAGw2/fm06n085IEDvt2/U7ySeRmTfTevn2+Xj1p8rHzwIAuIdAA4CjIoGezy/q1sv7urF4R2OLtwEACbKttc217e3vcU+gH7x+rJvLd9s3vog+CAAwYH5rbXttg8NNDgJt6x3EGQAwdLbB4Zl0EGg7xY67AQAwPLbFkUB7a84sawDA6JgG2xZHAh07GAAwdAQaABxFoAHAUQQaABxFoAHAUQQaABxFoAHAUQQaABxFoAHAUQQaABxFoAHAUQQaABxFoJGcV3NarpRU/6LucdFS/bSgte2nuhd3zxUtH9uHlbQccy05K9o5b6l5sqWZ2OvAYBFoJGNjVUUvzC1Vj/Ja28sqYx1u66Bpz0vN0y3NZmLuvYLRBNr8nezLtvKaDZ2fLhZUvxj2e8GPgEAjARNKf7IlayiXn4i5flv33m/poLGlVMy1qxhNoOPNVhrOvBf8vxBoJGBJOxemWSebmoy9/v0INH4EBBoJSCt/bpp19g0z5Hd51c0t9cpC9NpuydZYxd3uuSDQmTllajXV7QeCPS4aOqgsabpn6WRCGdtQuzSxsaTcif3BP1plrb9/aMak9KxSjjxnKniG5S9xHK96P7fDHHcQawwGgUYCJvTsU8tLVb22qplXcWP6XCvQNRWPW2qeFbTurXFvKnfsR9N8OITXib3x5zVVWw0V957r5+wjTb1dUd5bDy+3n9PY1K+5lKY25pT+2H5O9Z+nwTP6Az2efaLp3C965o0ta8382f48bZ7xPb8ABToINJJhZ7ZH3Rlms1nWTmVT6T+eaDLuF4PXCrQ5Gtm+We5EMLM9+PtRZPzBfio01kT2Q6F94Xxb8z3vq/uvgOngXG+gO1jiQFIINBI1nl1Q2tu5YWaowfJBS/WjbO/M+lqBbin/Z2hcR8YPaWgNvD3ezHLf9I396uuGlkWCcwQaw0WgMUQTmvw9rbVaTd7KQtPErzNrve4adHhcYEE5u8ISiutXx1/yut49BBojRKAxEqnDmk2dikX/HIEGIgg0RqM/upeEcnK/3DvWaAf3W5c4CDT+Wwg0EmBmsI2SMm/t9rW466n2+q5qWv/NP9eJaiPbu3c648+GzRENtNQ0sbz6LwmTDHRDuXfdc8AgEGgM3psl5f2oqllW/tD/mrf3Ve+CqnZ3hDmq5QWNB/eFtuYdbbXH7udVNKfqzXZwo4GuqXpmXuJkW2t7K0p/yGrd3znSPMn27MFOMtBjfxXaa+qtUnu73246tPMDuD4CjYQ81EzRBPa00d29YQ+7g8MENXZ27W/NC8Z/aah4uKSpy9ag/S+qdHeIxH1RJeFAmw+Xmb1S90suZ/xnShgMAg0AjiLQAOAoAg0AjiLQAOAoAg0AjiLQAOAoAg0AjiLQAOAoAg0AjiLQAOAoAg0AjiLQAOCoSKBvLN7R2Iv4wQCAITANti2OBPrWy/vxNwAAhsa2OBLo+fyibi7fjb0BAJA822Db4kigrQevH3cjzXIHACTPb61tr21wuMk9gbZsve0U21uT7n8QAGCgbGttc8Mz545IoAEAbiDQAOCkz/oXJ9ndz8aZW0cAAAAASUVORK5CYII=" InformativeScreenshot="4686e45529a3ece06e0806c52512c3d2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vincix Hackathon' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
                           </uix:NClick.Target>
@@ -680,7 +680,7 @@
                   </uix:NApplicationCard.TargetApp>
                 </uix:NApplicationCard>
               </Sequence>
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1194,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1376,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
             </Sequence>
           </ActivityAction>
         </ui:ForEachRow.Body>
@@ -691,7 +691,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachRow>
-      <ui:DeleteFileX DisplayName="Delete CSV FILE" sap:VirtualizedContainerService.HintSize="1230,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[str_PathCSVFile]" />
+      <ui:DeleteFileX DisplayName="Delete CSV FILE" sap:VirtualizedContainerService.HintSize="1452,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[str_PathCSVFile]" />
     </Sequence>
   </Sequence>
 </Activity>
